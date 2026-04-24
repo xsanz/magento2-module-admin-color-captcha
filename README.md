@@ -1,4 +1,4 @@
-# XiHuan_ColorCaptcha
+# Admin Color Captcha
 
 Admin image CAPTCHA enhancement for Magento 2: optional **per-character colors** and **grayscale noise** for better readability on the backend login (and other admin forms that use the default image CAPTCHA). Storefront CAPTCHA is unchanged.
 
