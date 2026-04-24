@@ -75,9 +75,13 @@ In the same section (**Advanced → Admin → CAPTCHA**), below the standard fie
 
 Keep **text luminance max** clearly **below** **noise luminance min** so letters stay darker than the noise.
 
+<img width="1051" height="475" alt="image" src="https://github.com/user-attachments/assets/1e1565dc-08f9-43fb-ac7a-d324f58ef20d" />
+
 ### 3. When you will see it
 
 Admin CAPTCHA appears according to your **Displaying Mode** (e.g. after failed login attempts). Refresh the CAPTCHA image with the reload control next to the image if needed.
+
+<img width="488" height="866" alt="image" src="https://github.com/user-attachments/assets/c8b0962e-f0b9-4e90-b94f-6a3af0d5d1eb" />
 
 ## Behavior notes
 
