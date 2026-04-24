@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2026 Xavier Sanz. All rights reserved.
+ * Licensed under the MIT License. See LICENSE.txt for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="admin">
+            <group id="captcha">
+                <field id="enable_per_char_captcha" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Enable Per-Character Color CAPTCHA</label>
+                    <comment>When enabled, admin CAPTCHA images use distinct colors per character and lighter noise for readability.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+                <field id="per_char_text_brightness_min" translate="label comment" type="text" sortOrder="11"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Text luminance min (0–255)</label>
+                    <comment>Lower bound for glyph brightness (BT.601 luminance). Lower keeps text darker.</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                        <field id="enable_per_char_captcha">1</field>
+                    </depends>
+                    <frontend_class>validate-digits validate-digits-range digits-range-0-255</frontend_class>
+                </field>
+                <field id="per_char_text_brightness_max" translate="label comment" type="text" sortOrder="12"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Text luminance max (0–255)</label>
+                    <comment>Upper bound for glyph brightness. Keep well below noise min for contrast on white.</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                        <field id="enable_per_char_captcha">1</field>
+                    </depends>
+                    <frontend_class>validate-digits validate-digits-range digits-range-0-255</frontend_class>
+                </field>
+                <field id="per_char_noise_brightness_min" translate="label comment" type="text" sortOrder="13"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Noise luminance min (0–255)</label>
+                    <comment>Lower bound for dot/line noise; should be higher than text luminance max.</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                        <field id="enable_per_char_captcha">1</field>
+                    </depends>
+                    <frontend_class>validate-digits validate-digits-range digits-range-0-255</frontend_class>
+                </field>
+                <field id="per_char_noise_brightness_max" translate="label comment" type="text" sortOrder="14"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Noise luminance max (0–255)</label>
+                    <comment>Upper bound for noise brightness.</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                        <field id="enable_per_char_captcha">1</field>
+                    </depends>
+                    <frontend_class>validate-digits validate-digits-range digits-range-0-255</frontend_class>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2026 Xavier Sanz. All rights reserved.
+ * Licensed under the MIT License. See LICENSE.txt for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="XiHuan_ColorCaptcha">
+        <sequence>
+            <module name="Magento_Captcha"/>
+        </sequence>
+    </module>
+</config>

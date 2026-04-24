@@ -1,0 +1,28 @@
+{
+    "name": "xsanz/module-admin-color-captcha",
+    "description": "Magento 2 admin image CAPTCHA with optional per-character colors and grayscale noise (XiHuan_ColorCaptcha).",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xavier Sanz"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "magento/framework": "*",
+        "magento/module-backend": "*",
+        "magento/module-captcha": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "XiHuan\\ColorCaptcha\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

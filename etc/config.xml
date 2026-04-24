@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2026 Xavier Sanz. All rights reserved.
+ * Licensed under the MIT License. See LICENSE.txt for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <admin>
+            <captcha>
+                <enable_per_char_captcha>0</enable_per_char_captcha>
+                <per_char_text_brightness_min>0</per_char_text_brightness_min>
+                <per_char_text_brightness_max>105</per_char_text_brightness_max>
+                <per_char_noise_brightness_min>140</per_char_noise_brightness_min>
+                <per_char_noise_brightness_max>160</per_char_noise_brightness_max>
+            </captcha>
+        </admin>
+    </default>
+</config>

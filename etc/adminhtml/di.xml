@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2026 Xavier Sanz. All rights reserved.
+ * Licensed under the MIT License. See LICENSE.txt for details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Captcha\Model\DefaultModel" type="XiHuan\ColorCaptcha\Model\PerCharColorDefaultModel"/>
+    <type name="XiHuan\ColorCaptcha\Model\PerCharColorDefaultModel">
+        <arguments>
+            <argument name="session" xsi:type="object">Magento\Backend\Model\Auth\Session</argument>
+            <argument name="captchaData" xsi:type="object">Magento\Captcha\Helper\Adminhtml\Data</argument>
+            <argument name="backendConfig" xsi:type="object">Magento\Backend\App\Config</argument>
+        </arguments>
+    </type>
+</config>
