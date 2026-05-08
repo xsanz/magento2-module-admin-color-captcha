@@ -34,10 +34,10 @@ Admin image CAPTCHA enhancement for Magento 2: optional **per-character colors**
 
 ### Option B — Composer (path repository)
 
-The package name is **`xsanz/magento2-module-color-captcha`** (see [composer.json](composer.json)). In the **Magento project** `composer.json`, add a path repository pointing at this directory, then:
+The package name is **`xsanz/magento2-module-admin-color-captcha`** (see [composer.json](composer.json)). In the **Magento project** `composer.json`, add a path repository pointing at this directory, then:
 
 ```bash
-composer require xsanz/magento2-module-color-captcha:*@dev
+composer require xsanz/magento2-module-admin-color-captcha:*@dev
 bin/magento module:enable XavierSanz_ColorCaptcha
 bin/magento setup:upgrade
 bin/magento setup:di:compile
