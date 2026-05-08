@@ -7,8 +7,8 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Captcha\Model\DefaultModel" type="XiHuan\ColorCaptcha\Model\PerCharColorDefaultModel"/>
-    <type name="XiHuan\ColorCaptcha\Model\PerCharColorDefaultModel">
+    <preference for="Magento\Captcha\Model\DefaultModel" type="XavierSanz\ColorCaptcha\Model\PerCharColorDefaultModel"/>
+    <type name="XavierSanz\ColorCaptcha\Model\PerCharColorDefaultModel">
         <arguments>
             <argument name="session" xsi:type="object">Magento\Backend\Model\Auth\Session</argument>
             <argument name="captchaData" xsi:type="object">Magento\Captcha\Helper\Adminhtml\Data</argument>

@@ -9,6 +9,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'XiHuan_ColorCaptcha',
+    'XavierSanz_ColorCaptcha',
     __DIR__
 );

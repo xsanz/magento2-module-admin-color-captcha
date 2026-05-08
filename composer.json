@@ -1,6 +1,6 @@
 {
-    "name": "xsanz/module-admin-color-captcha",
-    "description": "Magento 2 admin image CAPTCHA with optional per-character colors and grayscale noise (XiHuan_ColorCaptcha).",
+    "name": "xsanz/magento2-module-admin-color-captcha",
+    "description": "Magento 2 admin image CAPTCHA with optional per-character colors and grayscale noise (XavierSanz_ColorCaptcha).",
     "type": "magento2-module",
     "license": "MIT",
     "authors": [
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "XiHuan\\ColorCaptcha\\": ""
+            "XavierSanz\\ColorCaptcha\\": ""
         },
         "files": [
             "registration.php"

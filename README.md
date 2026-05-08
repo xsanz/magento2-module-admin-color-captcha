@@ -16,12 +16,12 @@ Admin image CAPTCHA enhancement for Magento 2: optional **per-character colors**
 
 1. Ensure the module lives at:
 
-   `app/code/XiHuan/ColorCaptcha/`
+   `app/code/XavierSanz/ColorCaptcha/`
 
 2. Enable the module and update the database:
 
    ```bash
-   bin/magento module:enable XiHuan_ColorCaptcha
+   bin/magento module:enable XavierSanz_ColorCaptcha
    bin/magento setup:upgrade
    ```
 
@@ -34,11 +34,11 @@ Admin image CAPTCHA enhancement for Magento 2: optional **per-character colors**
 
 ### Option B — Composer (path repository)
 
-The package name is **`xsanz/module-color-captcha`** (see [composer.json](composer.json)). In the **Magento project** `composer.json`, add a path repository pointing at this directory, then:
+The package name is **`xsanz/magento2-module-color-captcha`** (see [composer.json](composer.json)). In the **Magento project** `composer.json`, add a path repository pointing at this directory, then:
 
 ```bash
-composer require xsanz/module-color-captcha:*@dev
-bin/magento module:enable XiHuan_ColorCaptcha
+composer require xsanz/magento2-module-color-captcha:*@dev
+bin/magento module:enable XavierSanz_ColorCaptcha
 bin/magento setup:upgrade
 bin/magento setup:di:compile
 bin/magento cache:flush
@@ -96,7 +96,7 @@ The CAPTCHA group is available per **website** scope in Configuration. If you us
 ## Uninstall
 
 ```bash
-bin/magento module:disable XiHuan_ColorCaptcha
+bin/magento module:disable XavierSanz_ColorCaptcha
 bin/magento setup:upgrade
 bin/magento setup:di:compile
 bin/magento cache:flush
@@ -106,4 +106,4 @@ Remove the module files if you no longer need them. Config keys under `admin/cap
 
 ## Support
 
-Issues and improvements: maintain in your project or VCS as appropriate for `XiHuan_ColorCaptcha`.
+Issues and improvements: maintain in your project or VCS as appropriate for `XavierSanz_ColorCaptcha`.

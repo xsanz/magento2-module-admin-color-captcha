@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace XiHuan\ColorCaptcha\Model;
+namespace XavierSanz\ColorCaptcha\Model;
 
 use Laminas\Captcha\Exception\ImageNotLoadableException;
 use Laminas\Captcha\Exception\NoFontProvidedException;
